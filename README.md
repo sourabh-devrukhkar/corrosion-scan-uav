@@ -1,30 +1,51 @@
 # 🚁 Corrosion Scan UAV (MATLAB)
 
-This repository hosts a high-fidelity **Autonomous Drone Navigation** system designed for automated corrosion detection on industrial structures. It integrates flight control, environmental sensing, and an inspection modeling pipeline within a MATLAB-based simulation.
+This project is a simulation of an autonomous drone built to inspect industrial structures for corrosion. The goal is pretty straightforward — get a UAV to fly on its own, scan surfaces, and flag areas that might need attention, all while staying stable and avoiding obstacles.
 
-## 🚀 Project Overview
-The primary goal of this system is to enable a UAV to autonomously navigate complex environments detect structural corrosion using computer vision, and maintain a safe flight trajectory using specialized control logic.
+---
+
+## 🚀 What it does
+
+The drone navigates through a defined environment using waypoints, scans surfaces using a simple inspection model, and marks possible corrosion spots during flight. It’s also trained to handle disturbances like wind using a reinforcement learning setup.
+
+---
 
 ## 🛠️ Tech Stack
-* **Software:** MATLAB, Simulink
-* **Toolboxes:** Robotics System Toolbox, Reinforcement Learning Toolbox
 
-## 🧩 Key Features
-* **Autonomous Navigation:** Waypoint following and trajectory optimization for systematic surface scanning.
-* **RL Environment:** A custom Reinforcement Learning environment (`rl_env`) for training flight agents to handle varying wind conditions.
-* **Corrosion Detection Logic:** Integration of sensing and inspection modeling to identify and tag corrosion spots in real-time.
-* **Flight Control:** Robust flight logic handling stability and obstacle avoidance.
+- MATLAB  
+- Simulink  
+- Robotics System Toolbox  
+- Reinforcement Learning Toolbox  
 
-## 📂 Project Structure
-* `/drone_logic`: Core control algorithms and flight stability models.
-* `/rl_env`: Custom MATLAB scripts defining the Reinforcement Learning environment and training parameters.
-* `/script`: Utility scripts for data logging and simulation initialization.
-* `README.md`: Project documentation.
+---
+
+## 🧩 Features
+
+- **Autonomous Navigation**  
+  Follows waypoints and adjusts its path to cover surfaces efficiently.
+
+- **Reinforcement Learning Environment**  
+  A custom `rl_env` is used to train the drone to deal with things like wind and uncertainty.
+
+- **Corrosion Detection**  
+  Includes basic sensing + inspection logic to identify and tag corrosion areas.
+
+- **Flight Control**  
+  Handles stability and obstacle avoidance through custom control logic.
+
+---
 
 ## 🏁 Getting Started
 
-### Prerequisites
-* MATLAB (R2021b or later recommended)
-* Simulink
-* Aerospace and Reinforcement Learning Toolboxes
+### Requirements
 
+- MATLAB (R2021b or later recommended)  
+- Simulink  
+- Aerospace Toolbox  
+- Reinforcement Learning Toolbox  
+
+---
+
+## Notes
+
+This is mainly a simulation-focused project meant to explore how autonomous inspection drones might work in real-world industrial scenarios.
